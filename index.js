@@ -1,7 +1,5 @@
 import { ToyReact } from './ToyReact';
-import Board from './Board';
+import Game from './tic-tac-toe/Game';
 
-const game = <Board squares={Array(9).map((_, i) => i)} onClick={() => console.log('click')} />
-
-ToyReact.render(game, document.body);
+ToyReact.render(<Game />, document.body);
 
